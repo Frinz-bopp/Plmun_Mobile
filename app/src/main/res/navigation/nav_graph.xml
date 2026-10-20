@@ -18,5 +18,21 @@
         android:id="@+id/loginFragment"
         android:name="com.example.plmunmobile.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_studentDashboardFragment22"
+            app:destination="@id/studentDashboardFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentDashboardFragment2"
+        android:name="com.example.plmunmobile.StudentDashboardFragment"
+        android:label="StudentDashboardFragment" >
+        <action
+            android:id="@+id/action_studentDashboardFragment2_to_classScheduleFragment"
+            app:destination="@id/classScheduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/classScheduleFragment"
+        android:name="com.example.plmunmobile.ClassScheduleFragment"
+        android:label="ClassScheduleFragment" />
 </navigation>
